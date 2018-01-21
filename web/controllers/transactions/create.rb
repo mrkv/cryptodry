@@ -4,7 +4,6 @@ module Web
       class Create < Base
         include IMPORT[use_case: 'use_cases.transactions.create']
 
-        # Creates new captcha
         # @param [Hash] params
         # @return [Integer]
         def call(params)
