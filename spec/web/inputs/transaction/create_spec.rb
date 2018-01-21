@@ -16,7 +16,7 @@ describe Web::Inputs::Transaction::Create do
     end
   end
 
-  context 'captcha with invalid phone number' do
+  context 'transaction with invalid card id' do
     it 'fails' do
       expect(input.call(params.merge(card_id: nil)).success?).to eq false
     end
