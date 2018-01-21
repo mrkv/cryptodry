@@ -13,7 +13,7 @@ class Container < Dry::System::Container
   configure do |config|
     config.loader = CustomLoader
     config.root = File.expand_path('../../', __FILE__)
-    config.auto_register = %w[core/gateways core/use_cases]
+    config.auto_register = %w[core/gateways core/use_cases core/services]
   end
 
   load_paths!('core')

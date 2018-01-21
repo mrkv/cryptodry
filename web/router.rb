@@ -2,8 +2,8 @@ module Web
   class Router < Routes::Base
     route do |r|
       r.on 'api/v1' do
-        r.on 'hello' do
-          r.run Routes::Hello
+        r.on 'transactions' do
+          r.run Routes::Transactions
         end
       end
     end
