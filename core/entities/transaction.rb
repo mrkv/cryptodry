@@ -4,6 +4,7 @@ module Entities
   class Transaction < Base
     attribute :id,                            Types::Strict::Int.optional
 
+    attribute :external_reference,            Types::Strict::Int.optional
     attribute :amount_currency,               Types::Strict::String
     attribute :amount_cents,                  Types::Strict::Int
     attribute :description,                   Types::Strict::String.optional

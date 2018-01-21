@@ -5,24 +5,24 @@ Roda + dry-rb architecture showcase on example of a fictional crypto-transaction
 ## Setup
 `bundle`
 
-`dotenv -f .env rake db:setup`
+`dotenv -f .env bundle exec rake db:setup`
 
-`dotenv -f .env.test rake db:setup`
+`dotenv -f .env.test bundle exec rake db:setup`
 
 
 ## Start server
-`puma`
+`dotenv -f .env bundle exec puma`
 
 
 ## Run tests
-`dotenv -f .env.test rspec`
+`dotenv -f .env.test bundle exec rspec`
 
 
 ## DB Migrations
-`dotenv -f .env rake db:migrate[version]`
+`dotenv -f .env bundle exec rake db:migrate[version]`
 
-`dotenv -f .env rake db:rollback[version]`
+`dotenv -f .env bundle exec rake db:rollback[version]`
 
 Migration filename: `version_name.rb`
 
-`dotenv -f .env rake db:seed`
+`dotenv -f .env bundle exec rake db:seed`
