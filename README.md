@@ -3,10 +3,11 @@ Roda + dry-rb architecture showcase on example of a fictional crypto-transaction
 
 
 ## Setup
-`dotenv -f .env rake db:setup`
-
-`dotenv -f .env.test rake db:setup`
-
+```ruby
+bundle
+dotenv -f .env rake db:setup
+dotenv -f .env.test rake db:setup
+```
 
 ## Start server
 `puma`
